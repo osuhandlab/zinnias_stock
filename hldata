@@ -1,0 +1,6 @@
+# proposal for the zinnia and stock project.
+# When working with metagenomics, we have to be aware of the bias that can arise from our pipeline.
+# A major bias can arise from which DNA extraction method a researcher choses for their project.
+# The first part of my project is to decide which DNA extraction kit is giving me quality DNA for the organisms I am interested in, as well as which seed processing method (chopping, soaking, or grinding)
+# Then, once the DNA has been checked for quality, which ever method gave the best DNA quality, will then be choosen for sequencing, and will undergo metagenomic analysis.
+# The pipeline will follow the Nextflow pipeline model: Kraken2 for taxonomic classification, visualization with Pavion, adapter and quality trimming with FastQC and trimmomatic, assembly with SPAdes or METASPAdes, binning with Kraken2 tools extension, and then evaluation and quality control with BUSCO, CheckM, and reporting with MultiQC.
